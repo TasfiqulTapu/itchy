@@ -8,7 +8,12 @@ async function getJamData(jamURL){
   let x = await getItchData(jamURL);
   const $ = cheerio.load(x.data);
   //let div = $('div[class="stats_container"]')['0'].children.forEach(e=>console.log(e));
-  console.log($('div[class="stats_container"]').length)
+  let statCont = $('div[class="stat_box"]').text()
+  if(statCont.endsWith("Joined")){
+    jam["jamType"] = "upcoming"
+  }else if($('div[class="stat_box"]').html().contains("entries")){
+    console.log($('div[class="stat_box"]'))
+  }
   jam["title"] = $('h1[class="jam_title_header"] a').text()
   jam["jamURL"] = $('h1[class="jam_title_header"] a').attr("href")
   jam["host"] = $('div[class="jam_host_header"] a').text()
