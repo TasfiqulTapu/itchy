@@ -1,10 +1,10 @@
 {
   "name": "itchy",
   "version": "0.0.1",
-  "description": "A simple Node app built on fastify, instantly up and running.",
-  "main": "stop.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node stop.js"
+    "start": "node server.js"
   },
   "dependencies": {
   },
@@ -12,12 +12,10 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-mvp-node"
+    "url": "https://github.com/TasfiqulTapu/itchy"
   },
-  "license": "MIT",
+  "license": "",
   "keywords": [
-    "node",
-    "glitch",
-    "express"
+    "itch"
   ]
 }
