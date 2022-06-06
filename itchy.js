@@ -3,7 +3,8 @@ const cheerio = require("cheerio")
 
 module.exports = {getJamData};
 
-function getJamData(jamURL){
-  let data = axios.get(jamURL)
-  return data;
+async function getJamData(jamURL){
+  let res = await axios.get(jamURL);
+  let data = res.then(d=>d)
+  return data.data;
 }
