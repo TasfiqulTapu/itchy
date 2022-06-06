@@ -4,7 +4,9 @@ const cheerio = require("cheerio")
 module.exports = {getJamData};
 
 async function getJamData(jamURL){
-  getItchData(jamURL).then(d => console.log(d))
+  let resPage;
+  await getItchData(jamURL).then(async(d) => resPage = await d);
+  return resPage;
 } 
 
 async function getItchData(URL){
