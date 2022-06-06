@@ -1,5 +1,5 @@
 {
-  "name": "glitch-mvp-node",
+  "name": "itchy",
   "version": "0.0.1",
   "description": "A simple Node app built on fastify, instantly up and running.",
   "main": "server.js",
@@ -7,6 +7,8 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11"
   },
   "engines": {
     "node": "12.x"
