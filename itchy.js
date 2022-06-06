@@ -14,7 +14,6 @@ async function getJamData(jamURL){
     jam["joined"] = $('div[class="stat_value"]').text()
   }else if(statCont.endsWith("Ratings")){
     jam["jamType"] = "ended";
-    jam[$('div[class="stat_lable"]').text()] = $('div[class="stat_value"]').text()
   }else if(statCont.endsWith("Entries")){
     jam["jamType"] = "ongoing";
   }
