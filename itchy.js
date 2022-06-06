@@ -5,8 +5,8 @@ module.exports = {getJamData};
 
 async function getJamData(jamURL){
   const $ = cheerio.load(await getItchData(jamURL));
-  let div = $('div [class="stats_container"]');
-  console.log(div)
+  let div = $('a','h1[class="jam_title_header"]');
+  console.log(div.text())
 } 
 
 async function getItchData(pageURL){
