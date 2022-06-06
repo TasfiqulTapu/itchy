@@ -4,8 +4,9 @@ const cheerio = require("cheerio")
 module.exports = {getJamData};
 
 async function getJamData(jamURL){
-  const $ = cheerio.load(await getItchData(jamURL))
-  console.log($("div .stats_container"));
+  const $ = cheerio.load(await getItchData(jamURL));
+  let div = $('div [class="stats_container"]');
+  console.log(div)
 } 
 
 async function getItchData(pageURL){
