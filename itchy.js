@@ -8,9 +8,13 @@ async function getJamData(jamURL){
   let x = await getItchData(jamURL);
   const $ = cheerio.load(x.data);
   //let div = $('div[class="stats_container"]')['0'].children.forEach(e=>console.log(e));
-  jam["title"] = $('h1[class="jam_title_header"]').text()
-  let y =  $('div[class="stat_box"]').html()
-  console.log(y)
+  console.log($('div[class="stats_container"]').length)
+  jam["title"] = $('h1[class="jam_title_header"] a').text()
+  jam["jamURL"] = $('h1[class="jam_title_header"] a').attr("href")
+  jam["host"] = $('div[class="jam_host_header"] a').text()
+  jam["hostURL"] = $('div[class="jam_host_header"] a').attr("href")
+  // let y =  $('div[class="stats_container"]').html()
+  // console.log(y)
   console.log(jam)
 } 
 
