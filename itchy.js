@@ -10,9 +10,13 @@ async function getJamData(jamURL){
   //let div = $('div[class="stats_container"]')['0'].children.forEach(e=>console.log(e));
   let statCont = $('div[class="stat_box"]').text()
   if(statCont.endsWith("Joined")){
-    jam["jamType"] = "upcoming"
-  }else if($('div[class="stat_box"]').html().contains("entries")){
-    console.log($('div[class="stat_box"]'))
+    jam["jamType"] = "upcoming";
+    jam["joined"] = $('div[class="stat_value"]').text()
+  }else if(statCont.endsWith("Ratings")){
+    jam["jamType"] = "ended";
+    jam[$('div[class="stat_lable"]').text()] = $('div[class="stat_value"]').text()
+  }else if(statCont.endsWith("Entries")){
+    jam["jamType"] = "ongoing";
   }
   jam["title"] = $('h1[class="jam_title_header"] a').text()
   jam["jamURL"] = $('h1[class="jam_title_header"] a').attr("href")
