@@ -4,7 +4,14 @@ const cheerio = require("cheerio")
 module.exports = {getJamData};
 
 async function getJamData(jamURL){
-  let res = await axios.get(jamURL);
-  let data = res.then(d=>d)
-  return data.data;
+  getItchData(jamURL).then(d => console.log(d))
+} 
+
+async function getItchData(URL){
+  try{
+  let data = await axios.get(URL);
+  return data;
+  }catch(err){
+    console.error(err);
+  }
 }

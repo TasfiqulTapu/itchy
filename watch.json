@@ -1,10 +1,7 @@
 {
   "restart": {
     "exclude": [
-      "^views/"
-    ],
-    "include": [
-      "^server\\.js$"
+      "/"
     ]
   },
   "throttle": 10000
