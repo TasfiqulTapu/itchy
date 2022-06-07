@@ -1,2 +1,2 @@
 # itchy
-Web scraper to get jam data on [itch.io](https://itch.io)
+Web scraper to get jam data from [itch.io](https://itch.io)
