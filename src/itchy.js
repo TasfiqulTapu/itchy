@@ -1,9 +1,8 @@
 const axios = require("axios");
 const cheerio = require("cheerio")
 
-module.exports = {getJamData};
 
-async function getJamData(jamURL){
+exports.getJamData = async function getJamData(jamURL){
   let jam = {}
   let x = await getItchData(jamURL);
   const $ = cheerio.load(x.data);
