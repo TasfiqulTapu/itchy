@@ -2,9 +2,9 @@
   "name": "itchy",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "./src/itchy.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "node test.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
