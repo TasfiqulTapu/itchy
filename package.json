@@ -2,11 +2,13 @@
   "name": "itchy",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "itchy.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^0.22.0"
   },
   "engines": {
     "node": "12.x"
