@@ -2,7 +2,7 @@
   "name": "itchy",
   "version": "1.0.0",
   "description": "",
-  "main": "itchy.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
