@@ -32,7 +32,7 @@ exports.getJamData = async function getJamData(jamURL) {
     ).text();
   }
   jam["title"] = $('h1[class="jam_title_header"] a').text();
-  jam["jamURL"] = $('h1[class="jam_title_header"] a').attr("href");
+  jam["jamURL"] = "https://itch.io" + $('h1[class="jam_title_header"] a').attr("href");
   let hosts = {};
   let y = $('div[class="jam_host_header"]').html();
   $('div[class="jam_host_header"]')
