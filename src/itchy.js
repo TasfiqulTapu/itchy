@@ -2,8 +2,10 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 exports.getJamData = async function getJamData(jamURL) {
+  if(!jamURL.startsWith("https://itch.io/jam")) return "Bad request"
   let jam = {};
   let x = await getItchData(jamURL);
+  if(!x) return "Page not found"
   const $ = cheerio.load(x.data);
   let statCont = $('div[class="stat_box"]').text();
   if (statCont.endsWith("Joined")) {
@@ -61,6 +63,6 @@ async function getItchPage(URL) {
     let data = await axios.get(URL);
     return data;
   } catch (err) {
-    console.error(err);
+    console.error(err["code"])
   }
 }

@@ -7,5 +7,7 @@ async function jam(){
   console.log(jam)
   jam = await itchy.getJamData("https://itch.io/jam/gmtk-jam-2022");
   console.log(jam)
+  jam = await itchy.getJamData("https://itch.io/jam/gmtk-jam-2069");
+  console.log(jam)
 }
 jam()
