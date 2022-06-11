@@ -18,3 +18,23 @@ async function main(){
 }
 main()
 ```
+
+##### getJamData(jamURL)
+returns a json object with jam data of the url provided.
+<details>
+<summary>Upcoming jam</summary>
+  
+  ```js
+  {
+      jamType: "upcoming",
+      joined: 1234,
+      title: "Some Ridiculous Jam",
+      jamURL: "https://itch.io/jam/Link_To_Jam",
+      hosts: {
+          "Gabe" : "https://gabe.example.com",
+          "Mark" : "https://MarkDeez.Nuts"
+      }
+  }
+  ```
+  
+</details>
