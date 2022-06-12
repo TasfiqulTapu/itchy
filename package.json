@@ -4,7 +4,7 @@
   "description": "Web scraper to get jam data from itch.io",
   "main": "./src/itchy.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node tests.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
