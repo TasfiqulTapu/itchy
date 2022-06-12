@@ -27,9 +27,45 @@ returns a json object with jam data of the url provided.
   ```js
   {
       jamType: "upcoming",
-      joined: 1234,
+      joined: '1234',
       title: "Some Ridiculous Jam",
       jamURL: "https://itch.io/jam/Link_To_Jam",
+      hosts: {
+          "Gabe" : "https://gabe.example.com",
+          "Mark" : "https://MarkDeez.Nuts"
+      }
+  }
+  ```
+  
+</details>
+<details>
+<summary>Ongoing jam</summary>
+  
+  ```js
+  {
+      jamType: 'ongoing',
+      joined: '123',
+      entries: '11',
+      title: 'Some Ridiculous Jam',
+      jamURL: 'https://itch.io/jam/Link_To_Jam',
+      hosts: {
+          "Gabe" : "https://gabe.example.com",
+          "Mark" : "https://MarkDeez.Nuts"
+      }
+  }
+  ```
+  
+</details>
+<details>
+<summary>Ongoing jam</summary>
+  
+  ```js
+  {
+      jamType: 'ended',
+      ratings: '420',
+      entries: '69',
+      title: 'Some Ridiculous Jam',
+      jamURL: 'https://itch.io/jam/Link_To_Jam',
       hosts: {
           "Gabe" : "https://gabe.example.com",
           "Mark" : "https://MarkDeez.Nuts"
