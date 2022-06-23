@@ -10,13 +10,18 @@
     "axios": "^0.27.2",
     "cheerio": "^0.22.0"
   },
-  "engines": {
-    "node": "12.x"
-  },
+   "engines": { 
+     "node": "^12.20.0 || ^14.13.1 || >=16.0.0" 
+   },
   "repository": {
     "url": "https://github.com/TasfiqulTapu/itchy"
-  },
-  "license": "MIT",
+  }, 
+   "author": "Tasfiqul Tapu", 
+   "license": "MIT", 
+   "bugs": { 
+     "url": "https://github.com/TasfiqulTapu/itchy/issues" 
+   }, 
+   "homepage": "https://github.com/TasfiqulTapu/itchy",
   "keywords": [
     "itch"
   ]

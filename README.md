@@ -19,7 +19,7 @@ async function main(){
 main()
 ```
 
-#### getJamData(jamURL)
+#### #getJamData(jamURL)
 returns a json object with jam data of the url provided.
 <details>
 <summary>Upcoming jam</summary>
