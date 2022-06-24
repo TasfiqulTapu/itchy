@@ -5,7 +5,7 @@ Web scraper to get jam data from [itch.io](https://itch.io)
 
 ### Installing 
 This this in you project folder to install this package
-```sh
+```bash
 # install via npm
 npm i TasfiqulTapu/itchy 
 # install via yarn 
