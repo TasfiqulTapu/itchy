@@ -1,7 +1,7 @@
 # itchy
 Web scraper to get jam data from [itch.io](https://itch.io)
 
-> Please refer to your local laws before using this package to scrape data.
+> ⚠️ This package uses webscraping to get data. Please refer to your local laws before using this package to scrape data.
 
 ### Installing 
 This this in you project folder to install this package
