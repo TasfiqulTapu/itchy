@@ -11,7 +11,7 @@ exports.getJamData = async function getJamData(jamURL) {
   if (statCont.endsWith("Joined")) {
     jam["jamType"] = "upcoming";
     try{
-    jam["joined"] = $('div[class="stats_container"] ')["0"].children[1]["attribs"]["title"];
+    jam["joined"] = $('div[class="stats_container"] ')["0"].children[0]["attribs"]["title"];
     }catch(err){}
     if (!jam["joined"]) jam["joined"] = $('div[class="stat_value"]').text();
   } else if (statCont.endsWith("Ratings")) {
