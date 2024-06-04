@@ -36,7 +36,8 @@ returns a json object with jam data of the url provided.
       hosts: {
           "Gabe" : "https://gabe.example.com",
           "Mark" : "https://MarkDeez.Nuts"
-      }
+      },
+      jamID: '12345'
   }
   ```
   
@@ -54,7 +55,8 @@ returns a json object with jam data of the url provided.
       hosts: {
           "Gabe" : "https://gabe.example.com",
           "Mark" : "https://MarkDeez.Nuts"
-      }
+      },
+      jamID: '12345'
   }
   ```
   
@@ -72,7 +74,8 @@ returns a json object with jam data of the url provided.
       hosts: {
           "Gabe" : "https://gabe.example.com",
           "Mark" : "https://MarkDeez.Nuts"
-      }
+      },
+      jamID: '12345'
   }
   ```
   

@@ -48,6 +48,11 @@ exports.getJamData = async function getJamData(jamURL) {
       hosts[$(this).text()] = $(this).attr("href");
     });
   jam["hosts"] = hosts;
+  
+  const jamIDRegex = /"id":[0-9]+/g;
+  let matches = x.data.match(jamIDRegex).pop().slice(5);
+  if(!/\D/.test(matches)) jam["jamID"] = matches;
+  
   //   jam["host"] = $('div[class="jam_host_header"] a').text()
   //   jam["hostURL"] = $('div[class="jam_host_header"] a').attr("href")
   return jam;
