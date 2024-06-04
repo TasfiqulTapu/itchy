@@ -2,3 +2,6 @@
 .glitch-assets
 .node-gyp
 node_modules
+pnpm-lock.yaml
+package-lock.json
+shrinkwrap.yaml
