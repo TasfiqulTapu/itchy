@@ -1,6 +1,6 @@
 {
   "name": "itchy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web scraper to get jam data from itch.io",
   "main": "./src/itchy.js",
   "scripts": {
