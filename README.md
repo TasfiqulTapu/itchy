@@ -24,6 +24,7 @@ main()
 
 #### #getJamData(jamURL)
 returns a json object with jam data of the url provided.
+`entries.json` can be obtained from `https://itch.io/jam/{jamID}/entries.json`
 <details>
 <summary>Upcoming jam</summary>
   
